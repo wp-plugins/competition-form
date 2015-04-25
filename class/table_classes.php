@@ -6,9 +6,19 @@ if( ! class_exists( 'WP_List_Table' ) ) {
 }
 
 
+
+
 class competition_entries_table extends WP_List_Table {
 
-
+	public $competition;
+	public $competition_id;
+	public $competition_entry_options;
+	public $current_page;
+	public $per_page;
+	public $_column_headers;
+	public $items;
+	public $col_count;
+	
     public function prepare_items( $per_page )
     {
 		
@@ -143,7 +153,15 @@ class competition_entries_table extends WP_List_Table {
 
 class competition_winners_table extends WP_List_Table {
 
-
+	public $competition;
+	public $competition_id;
+	public $competition_entry_options;
+	public $current_page;
+	public $per_page;
+	public $_column_headers;
+	public $items;
+	public $col_count;
+	
     public function prepare_items( )
     {
 		
