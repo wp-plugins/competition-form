@@ -61,3 +61,6 @@ Yes, this plug-in uses Contact Form 7 (a great Wordress plug-in for creating web
 * fixed 4.2 class problem
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+Fixed an issue related to wordpress version 4.2
