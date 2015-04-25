@@ -4,7 +4,7 @@
  * Plugin Name: Competition Form
  * Plugin URI: 
  * Description: Create a simple competition entry form combined with Contact Form 7
- * Version:  1.1
+ * Version:  1.2
  * Author: RaiserWeb
  * Author URI: http://www.raiserweb.com
  * Developer: RaiserWeb

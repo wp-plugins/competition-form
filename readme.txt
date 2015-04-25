@@ -4,7 +4,7 @@ Donate link: http://raiserweb.com
 Tags: competition, competition form, competition entry form
 Requires at least: 3.0.1
 Tested up to: 4.2
-Stable tag: 3.5
+Stable tag: 1.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,10 +57,10 @@ Yes, this plug-in uses Contact Form 7 (a great Wordress plug-in for creating web
 = 1.0.0 =
 * first release
 
-= 3.5 =
+= 1.2 =
 * fixed 4.2 class problem
 
 == Upgrade Notice ==
 
-= 3.5 =
+= 1.2 =
 Fixed an issue related to wordpress version 4.2
