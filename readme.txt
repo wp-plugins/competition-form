@@ -54,7 +54,7 @@ Yes, this plug-in uses Contact Form 7 (a great Wordress plug-in for creating web
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.1 =
 * first release
 
 = 1.2 =
