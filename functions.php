@@ -57,7 +57,7 @@ function prefix_admin_select_winner() {
 			WHERE
 			{$wpdb->prefix}competition_entries.comp_id = %d
 			AND
-			wp_competition_entries.winner is null
+			{$wpdb->prefix}competition_entries.winner is null
 			{$date_where}
 			{$where}			
 			ORDER BY RAND()
