@@ -50,7 +50,7 @@ if( is_admin() ) {
 	add_action('admin_enqueue_scripts', 'enqueue_date_picker_comp');
 	function enqueue_date_picker_comp(){
 		wp_enqueue_script(	'field-date-js', 'ft.js', array('jquery', 'jquery-ui-core', 'jquery-ui-datepicker'), time(), true );
-		wp_enqueue_style('jquery-ui-datepicker');
+		wp_enqueue_style('jquery-datepicker-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
 	}
 
 	// admin pages and help
