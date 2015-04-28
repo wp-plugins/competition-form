@@ -37,9 +37,9 @@
 		<h4>Entry Dates</h4>
 		<p>Leave blank if there are no date conditions. Or select dates to pick a winner who entered between the dates.
 		<p>Start: </p>
-		<input type="date" name="date_from" class="datepicker">
+		<input type="text" name="date_from" class="datepicker">
 		<p>End: </p>
-		<input type="date" name="date_to" class="datepicker">
+		<input type="text" name="date_to" class="datepicker">
 
 		
 		<p class="submit">
