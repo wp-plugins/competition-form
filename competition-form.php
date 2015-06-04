@@ -3,7 +3,7 @@
  * Plugin Name: Competition Form
  * Plugin URI: 
  * Description: Create a simple competition entry form combined with Contact Form 7
- * Version:  1.3
+ * Version:  1.4
  * Author: RaiserWeb
  * Author URI: http://www.raiserweb.com
  * Developer: RaiserWeb
@@ -49,7 +49,6 @@ if( is_admin() ) {
 	// js and styles
 	add_action('admin_enqueue_scripts', 'enqueue_date_picker_comp');
 	function enqueue_date_picker_comp(){
-		wp_enqueue_script(	'field-date-js', 'ft.js', array('jquery', 'jquery-ui-core', 'jquery-ui-datepicker'), time(), true );
 		wp_enqueue_style('jquery-datepicker-style', 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/smoothness/jquery-ui.css');
 	}
 
