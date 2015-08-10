@@ -155,26 +155,42 @@ function prefix_admin_renounce_competition_winner() {
 	
 }
 
-add_action( 'admin_post_export_competition_entries', 'prefix_admin_export_competition_entries' );
-function prefix_admin_export_competition_entries() {	
+add_action( 'admin_post_export_competition_entries_winners', 'prefix_admin_export_competition_entries_winners' );
+function prefix_admin_export_competition_entries_winners() {	
 	
-	competition_csv_export();
+    $competition_entries = new competition_winners_table();	
+	
+	competition_csv_export( $competition_entries );
 	
 }
 
-function competition_csv_export() { 
+add_action( 'admin_post_export_competition_entries', 'prefix_admin_export_competition_entries' );
+function prefix_admin_export_competition_entries() {	
+	
+    $competition_entries = new competition_entries_table();	
+	
+	competition_csv_export( $competition_entries );
+	
+}
 
-    $competition_entries = new competition_entries_table();
+function competition_csv_export( $competition_entries ) { 
+
+
     $competition_entries->prepare_items( 9999999 );	
 
     $result = array();
 	
 	$result = $competition_entries->table_data();
+
+	if( count( $result ) == 0 ) {
+		$result['data']['data'] = 'No data';
+	}
 	
 	// remove delete
 	
 	foreach( $result as $key=>$val ) {
 		unset( $result[$key]['delete'] );
+		unset( $result[$key]['remove'] );
 	}
 
 	reset( $result );

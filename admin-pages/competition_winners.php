@@ -49,6 +49,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		});
 		</script>
 		
+		<a href="<?php echo admin_url( "admin-post.php?action=export_competition_entries_winners&competition_id={$competition_entries_table->competition_id}&paged={$competition_entries_table->current_page}" );?>" class="button button-primary right">Export All Winners to csv</a>
 		
 		<?php $competition_winners_table->display();?>
 		
